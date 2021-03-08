@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "implementacionArbin.h"
 #include "recorrerArbolIN.h"
+#include "recorrerArbolPRE.h"
+#include "recorrerArbolPOS.h"
 
 int main(){
 
@@ -20,9 +22,10 @@ int main(){
 
 
     recorrerArbolIN(raiz);
-//    recorrerArbolPRE();
-//    recorrerArbolPOS();
-
+    printf("\n");
+    recorrerArbolPRE(raiz);
+    printf("\n");
+    recorrerArbolPOS(raiz);
 
     return 0;
 }
